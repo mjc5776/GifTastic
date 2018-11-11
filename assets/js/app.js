@@ -80,8 +80,9 @@ $(document).on("click", ".topic-button" , function(event){
         event.preventDefault();
         var newButton = $("#heroName").val();
         if (newButton === ''){
-            alert("Test");
-
+            //alert("Please enter a Super Hero Name");
+            swal("Please enter the name of a Super Hero", "", "warning")
+           
         }
          else{
             newButton.trim()
